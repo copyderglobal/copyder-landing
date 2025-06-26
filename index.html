@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comercializadora Copyder</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
+    header { background: #0b1f33; color: #fff; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.2rem; }
+    .lang-switch, .tab-switch { text-align: center; margin-top: 1rem; }
+    .lang-switch button, .tab-switch button {
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border: none;
+      background: #e0e0e0;
+      border-radius: 4px;
+    }
+    main { max-width: 1100px; margin: auto; padding: 2rem 1rem; }
+    section { margin-bottom: 3rem; }
+    h2 { color: #0b1f33; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+    ul { padding-left: 1.5rem; }
+    footer { background: #f3f3f3; color: #777; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; }
+    .lang, .tab { display: none; }
+    .active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Copyder de México</h1>
+    <p>Abastecimiento integral de materias primas, equipos industriales y soluciones técnicas especializadas</p>
+  </header>
+
+  <div class="lang-switch">
+    <button onclick="changeLang('es')">Español</button>
+    <button onclick="changeLang('en')">English</button>
+    <button onclick="changeLang('zh')">中文</button>
+  </div>
+
+  <div class="tab-switch">
+    <button onclick="changeTab('about')">Quiénes somos</button>
+    <button onclick="changeTab('chem')">División Química</button>
+    <button onclick="changeTab('mach')">División Maquinaria</button>
+    <button onclick="changeTab('services')">Servicios Estratégicos</button>
+    <button onclick="changeTab('conf')">Confidencialidad</button>
+    <button onclick="changeTab('contact')">Contacto</button>
+  </div>
+
+  <main>
+    <div id="es" class="lang active">
+      <div id="about" class="tab active">
+        <h2>¿Quiénes somos?</h2>
+        <p>Comercializadora Copyder es una empresa con vocación técnica y visión global. Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren discreción, atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
+        <p>Contamos con una red internacional de aliados que nos permite identificar proveedores confiables en Asia, Europa y América para productos técnicos, piezas especializadas y formulaciones químicas avanzadas.</p>
+        <p>Nuestro modelo de operación está basado en principios de ética, confidencialidad y servicio. Con cada cliente desarrollamos una relación de largo plazo sustentada en resultados.</p>
+        <p>La experiencia de nuestro equipo abarca más de 20 sectores industriales, múltiples certificaciones, idiomas, regulaciones y procesos. Integramos herramientas de evaluación técnica, financiera y de riesgos para cada proyecto.</p>
+        <p>Estamos convencidos de que el comercio industrial debe centrarse en la confianza, el conocimiento técnico y la capacidad de ejecución, no solo en el precio por kilo o unidad.</p>
+      </div>
+
+      <div id="chem" class="tab">
+        <h2>División Química</h2>
+        <p>Ofrecemos más que productos: diseñamos soluciones químicas adaptadas a procesos únicos. Trabajamos con formuladores, plantas manufactureras, laboratorios de investigación y operadores de tratamiento de agua que requieren especialidades técnicas.</p>
+        <p>Ejemplos de líneas químicas que manejamos:</p>
+        <ul>
+          <li>Lubricantes técnicos, evaporativos, biohíbridos y de mecanizado</li>
+          <li>Surfactantes no iónicos, aniónicos, anfotéricos</li>
+          <li>Biocidas para control microbiológico (oxidantes/no oxidantes)</li>
+          <li>Polímeros floculantes, coagulantes y modificadores reológicos</li>
+          <li>Solventes técnicos y disolventes verdes</li>
+        </ul>
+        <p>Nuestro servicio incluye compatibilidad de ingredientes, cumplimiento normativo (REACH, TSCA, FDA), gestión de muestras, análisis comparativos contra productos marca y validación en campo.</p>
+        <p>Nos mantenemos actualizados en nuevas tecnologías químicas, como ingredientes biodegradables, emulsificantes poliméricos, alternativas sin VOC y líneas con enfoque de economía circular.</p>
+      </div>
+
+      <div id="mach" class="tab">
+        <h2>División de Maquinaria y Equipos</h2>
+        <p>Abastecemos maquinaria crítica, repuestos especiales y líneas completas para integración de plantas industriales. Atendemos desde componentes individuales hasta sistemas integrales.</p>
+        <p>Entre los productos que ofrecemos:</p>
+        <ul>
+          <li>Agitadores, mezcladores, tanques con diseño sanitario o de proceso</li>
+          <li>Bombas de vacío, centrífugas, dosificadoras y de desplazamiento positivo</li>
+          <li>Válvulas y actuadores de control</li>
+          <li>Equipos de filtración, separación y secado</li>
+          <li>Sistemas de automatización, PLCs y sensores industriales</li>
+        </ul>
+        <p>Nos encargamos de evaluar la compatibilidad con procesos existentes, normativas locales, tipo de fluido o producto manejado, consumo energético, integración con otros equipos y facilidad de mantenimiento.</p>
+        <p>Trabajamos con fabricantes de Alemania, EE.UU., Italia, China y Corea del Sur para ofrecer soluciones balanceadas en costo-beneficio.</p>
+      </div>
+
+      <div id="services" class="tab">
+        <h2>Servicios Estratégicos</h2>
+        <ul>
+          <li>Localización técnica de proveedores alternos</li>
+          <li>Consolidación de compras multiorigen</li>
+          <li>Comparativo técnico-económico entre marcas y productos</li>
+          <li>Auditoría de documentación de calidad y seguridad</li>
+          <li>Inspección previa al embarque</li>
+          <li>Negociación en condiciones incoterm FCA, FOB, CIF o DDP</li>
+          <li>Evaluación de cumplimiento normativo internacional</li>
+          <li>Traducción técnica y contacto multilingüe con fabricantes</li>
+        </ul>
+        <p>Estos servicios nos diferencian como una comercializadora consultiva, más allá de un distribuidor de precio bajo.</p>
+      </div>
+
+      <div id="conf" class="tab">
+        <h2>Compromiso de Confidencialidad</h2>
+        <p>Operamos bajo estándares éticos estrictos. No divulgamos, compartimos, ni usamos para fines distintos la información que nuestros clientes nos confían. Nuestro modelo está diseñado para proteger:</p>
+        <ul>
+          <li>Formulaciones y especificaciones técnicas</li>
+          <li>Proyectos de inversión, expansión o mejora de procesos</li>
+          <li>Proveedores clave y sus condiciones comerciales</li>
+          <li>Estrategias de sustitución o desarrollo</li>
+        </ul>
+        <p>Firmamos NDAs bilaterales, respetamos acuerdos de exclusividad y no contactamos a fabricantes si el cliente desea permanecer como único intermediario.</p>
+      </div>
+
+      <div id="contact" class="tab">
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos directamente al correo:</p>
+        <p><strong>info@copyderglobal.com</strong></p>
+        <p>Envíanos tus requerimientos técnicos, fichas, cantidades estimadas o referencias de producto para brindarte una propuesta seria, técnica y eficiente.</p>
+      </div>
+    </div>
+  
+<div id="en" class="lang">
+  <div id="about" class="tab active">
+    <h2>About Us</h2>
+    <p>Copyder de México is a sourcing and supply company committed to providing specialized industrial materials and equipment. We serve as a strategic partner for clients who demand technical competence, discretion, and international reach.</p>
+    <p>We have a strong international network of reliable partners and suppliers in Asia, Europe, and the Americas, helping us offer competitive and high-performance solutions.</p>
+    <p>Our values include ethics, confidentiality, and long-term relationships. We evaluate every supply operation technically and commercially to align with our client's strategic goals.</p>
+    <p>Our experience spans more than 20 industries, international certifications, regulations, and multilingual negotiations.</p>
+    <p>We believe that trust, technical rigor, and consistency are key to modern industrial commerce.</p>
+  </div>
+
+  <div id="chem" class="tab">
+    <h2>Chemicals Division</h2>
+    <p>We deliver tailored chemical sourcing for formulators, manufacturers, and technical operators across various sectors. Our chemical catalog includes:</p>
+    <ul>
+      <li>Technical lubricants (evaporative, machining, biodegradable)</li>
+      <li>Surfactants (nonionic, anionic, amphoteric)</li>
+      <li>Biocides (oxidizing and non-oxidizing)</li>
+      <li>Flocculants, rheology modifiers, polymer solutions</li>
+      <li>Technical and eco-solvents</li>
+    </ul>
+    <p>We help our clients ensure compliance (REACH, TSCA, FDA), technical validation, comparative benchmarking, and performance testing.</p>
+    <p>We are committed to sustainable chemistry, with continuous research in VOC-free, biodegradable, and circular economy-friendly ingredients.</p>
+  </div>
+
+  <div id="mach" class="tab">
+    <h2>Machinery Division</h2>
+    <p>We supply industrial-grade equipment, spare parts, and entire production lines for demanding industrial applications.</p>
+    <ul>
+      <li>Agitators, mixers, tanks (process or sanitary)</li>
+      <li>Pumps (vacuum, centrifugal, dosing, positive displacement)</li>
+      <li>Valves and automated actuators</li>
+      <li>Filtration and drying systems</li>
+      <li>Automation systems, sensors, PLC integration</li>
+    </ul>
+    <p>We ensure compatibility with process requirements, energy efficiency, and regulatory conditions. Our partners include trusted manufacturers from the USA, Germany, China, Italy, and South Korea.</p>
+  </div>
+
+  <div id="services" class="tab">
+    <h2>Strategic Services</h2>
+    <ul>
+      <li>Global supplier identification and qualification</li>
+      <li>Multisource purchase consolidation</li>
+      <li>Technical and cost benchmarking</li>
+      <li>Quality and safety document audits</li>
+      <li>Pre-shipment inspection and reporting</li>
+      <li>Incoterm-based negotiation: FCA, FOB, CIF, DDP</li>
+      <li>Regulatory compliance evaluations</li>
+      <li>Multilingual technical translation and support</li>
+    </ul>
+    <p>Our approach goes beyond sales — we act as your outsourced procurement intelligence.</p>
+  </div>
+
+  <div id="conf" class="tab">
+    <h2>Confidentiality Commitment</h2>
+    <p>We operate with full discretion to protect:</p>
+    <ul>
+      <li>Formulations and technical specs</li>
+      <li>Projects in R&D or expansion</li>
+      <li>Vendor relationships and pricing</li>
+      <li>Substitution and development strategies</li>
+    </ul>
+    <p>We sign NDAs, respect exclusivity, and only initiate contact with third parties upon client approval.</p>
+  </div>
+
+  <div id="contact" class="tab">
+    <h2>Contact</h2>
+    <p>Email us at: <strong>info@copyderglobal.com</strong></p>
+    <p>Please include your technical specs, target quantities, or reference documents to receive a detailed and professional proposal.</p>
+  </div>
+</div>
+
+<div id="zh" class="lang">
+  <div id="about" class="tab active">
+    <h2>关于我们</h2>
+    <p>Copyder de México 是一家专业从事工业材料和设备采购的公司。我们为客户提供高度保密、技术支持和国际资源整合服务。</p>
+    <p>我们拥有遍布亚洲、欧洲、美洲的合作网络，能够为客户寻找高性能、具有竞争力的产品和解决方案。</p>
+    <p>我们的核心价值包括：职业道德、长期合作、严格保密以及以客户为中心的定制化支持。</p>
+    <p>我们团队具备多个行业和国际标准的经验，包括技术、认证、法规和多语种谈判。</p>
+    <p>我们深信工业采购必须以信任、专业和可执行性为基础。</p>
+  </div>
+
+  <div id="chem" class="tab">
+    <h2>化学品事业部</h2>
+    <p>我们为配方商、制造商和技术运营商提供定制的化学原料，包括但不限于：</p>
+    <ul>
+      <li>技术润滑剂（挥发型、机械加工用、生物型）</li>
+      <li>表面活性剂（非离子型、阴离子型、两性型）</li>
+      <li>杀菌剂（氧化型与非氧化型）</li>
+      <li>絮凝剂、流变改性剂、高分子溶液</li>
+      <li>环保型技术溶剂</li>
+    </ul>
+    <p>我们提供合规性支持（如REACH、TSCA、FDA），样品对比测试和技术验证。</p>
+  </div>
+
+  <div id="mach" class="tab">
+    <h2>设备事业部</h2>
+    <p>我们供应工业级设备、零部件及整条生产线，涵盖领域广泛，包括：</p>
+    <ul>
+      <li>搅拌器、混合罐（工艺型或卫生型）</li>
+      <li>泵类（真空泵、离心泵、计量泵、容积泵）</li>
+      <li>自动控制阀及执行器</li>
+      <li>过滤和干燥系统</li>
+      <li>自动化控制系统、传感器、PLC</li>
+    </ul>
+    <p>我们确保设备在技术、能源效率与法规方面的兼容性。合作厂商遍布美国、德国、中国、意大利和韩国。</p>
+  </div>
+
+  <div id="services" class="tab">
+    <h2>战略服务</h2>
+    <ul>
+      <li>全球供应商筛选与资质认证</li>
+      <li>多渠道采购整合</li>
+      <li>技术和成本对标分析</li>
+      <li>质量和安全文件审核</li>
+      <li>装运前检验与报告</li>
+      <li>按国际贸易术语（FCA, FOB, CIF, DDP）谈判</li>
+      <li>法规合规性评估</li>
+      <li>多语言技术翻译与客户支持</li>
+    </ul>
+    <p>我们不仅是供应商，更是您在全球采购中的情报顾问。</p>
+  </div>
+
+  <div id="conf" class="tab">
+    <h2>保密承诺</h2>
+    <p>我们承诺保密以下内容：</p>
+    <ul>
+      <li>配方与技术参数</li>
+      <li>研发或扩产计划</li>
+      <li>供应商信息与价格</li>
+      <li>替代开发策略</li>
+    </ul>
+    <p>我们签署保密协议（NDA），遵守排他性，并仅在客户授权下与第三方联系。</p>
+  </div>
+
+  <div id="contact" class="tab">
+    <h2>联系方式</h2>
+    <p>邮箱：<strong>info@copyderglobal.com</strong></p>
+    <p>请附上您的技术资料、参考产品或需求数量，以便我们提供专业建议与报价。</p>
+  </div>
+</div>
+
+</main>
+
+  <footer>© 2025 Copyder de México — Todos los derechos reservados</footer>
+
+  <script>
+    function changeLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+
+    function changeTab(tabId) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
