@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comercializadora Copyder</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
+    header { background: #0b1f33; color: #fff; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.2rem; }
+    nav { text-align: center; margin-top: 1rem; }
+    nav button { margin: 0 0.3rem; padding: 0.5rem 1rem; cursor: pointer; border: none; background: #e0e0e0; border-radius: 4px; }
+    main { max-width: 1000px; margin: auto; padding: 2rem 1rem; }
+    section { margin-bottom: 3rem; }
+    h2 { color: #0b1f33; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+    ul { padding-left: 1.5rem; }
+    footer { background: #f3f3f3; color: #777; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; }
+    .lang { display: none; }
+    .active { display: block; }
+    .img-box { text-align: center; margin-top: 1rem; }
+    .img-box img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Comercializadora Copyder S. de R.L. de C.V.</h1>
+    <p>Soluciones técnicas para el abastecimiento industrial especializado</p>
+  </header>
+
+  <nav>
+    <button onclick="changeLang('es')">Español</button>
+    <button onclick="changeLang('en')">English</button>
+    <button onclick="changeLang('zh')">中文</button>
+  </nav>
+
+  <main>
+    <div id="es" class="lang active">
+      <section>
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una empresa mexicana enfocada en el abastecimiento nacional e internacional de materias primas, especialidades químicas y equipos técnicos para industrias de transformación.</p>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?chemical,factory" alt="industria química"></div>
+      </section>
+      <section>
+        <h2>Servicios</h2>
+        <ul><li>Sourcing técnico global de materias primas</li><li>Negociación con fabricantes y traders</li><li>Validación de documentación técnica</li><li>Coordinación logística</li><li>Atención personalizada</li></ul>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?logistics,warehouse" alt="logística industrial"></div>
+      </section>
+      <section>
+        <h2>Industrias que atendemos</h2>
+        <ul><li>Química y petroquímica</li><li>Minería</li><li>Papel y cartón</li><li>Textil</li><li>Automotriz y aeroespacial</li></ul>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?industry,factory" alt="sectores industriales"></div>
+      </section>
+      <section>
+        <h2>Confidencialidad</h2>
+        <p>Protegemos la identidad y los intereses de nuestros clientes bajo acuerdos estrictos de no divulgación.</p>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?confidential,security" alt="confidencialidad"></div>
+      </section>
+      <section>
+        <h2>Contacto</h2>
+        <p><strong>info@copyderglobal.com</strong></p>
+      </section>
+    </div>
+
+    <div id="en" class="lang">
+      <section>
+        <h2>About Us</h2>
+        <p>We are a Mexican company focused on sourcing raw materials and technical supplies for transformation industries.</p>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?chemistry,plant" alt="chemical plant"></div>
+      </section>
+      <section>
+        <h2>Services</h2>
+        <ul><li>Technical sourcing</li><li>Supplier negotiations</li><li>Document validation</li><li>Logistics coordination</li><li>Custom service</li></ul>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?supplychain,shipping" alt="supply chain"></div>
+      </section>
+      <section>
+        <h2>Industries Served</h2>
+        <ul><li>Chemical</li><li>Mining</li><li>Paper</li><li>Textile</li><li>Automotive</li></ul>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?industrial,machinery" alt="industry"></div>
+      </section>
+      <section>
+        <h2>Confidentiality</h2>
+        <p>We protect client identity and data under strict non-disclosure terms.</p>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?privacy,data" alt="confidential data"></div>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p><strong>info@copyderglobal.com</strong></p>
+      </section>
+    </div>
+
+    <div id="zh" class="lang">
+      <section>
+        <h2>关于我们</h2>
+        <p>我们专注于为工业客户提供原材料与技术设备的全球采购服务。</p>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?工厂,化学" alt="工厂图片"></div>
+      </section>
+      <section>
+        <h2>服务项目</h2>
+        <ul><li>原料采购</li><li>供应商谈判</li><li>技术文件验证</li><li>物流协调</li><li>客户服务</li></ul>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?仓库,物流" alt="物流图片"></div>
+      </section>
+      <section>
+        <h2>服务行业</h2>
+        <ul><li>化工</li><li>矿业</li><li>纸张</li><li>纺织</li><li>汽车</li></ul>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?工业,生产线" alt="行业图片"></div>
+      </section>
+      <section>
+        <h2>保密承诺</h2>
+        <p>我们保护客户身份和资料，并严格遵守保密协议。</p>
+        <div class="img-box"><img src="https://source.unsplash.com/featured/?安全,隐私" alt="数据保密"></div>
+      </section>
+      <section>
+        <h2>联系方式</h2>
+        <p><strong>info@copyderglobal.com</strong></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>© 2025 Comercializadora Copyder S. de R.L. de C.V. — Todos los derechos reservados</footer>
+
+  <script>
+    function changeLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
