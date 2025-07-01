@@ -1,43 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copyder de México</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comercializadora Química</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #111;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero-text {
+      background-color: #e8e8e8;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .hero-img img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
     <section class="hero">
-        <div class="hero-content">
-            <div class="text-column">
-                <h1>Tu Aliado en busca de mejores alternativas de la Industria Química</h1>
-                <p>Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
-                <a href="#servicios" class="button">Nuestros Servicios</a>
-                <div class="small-images">
-                    <img src="assets/lab.jpg" alt="Laboratorio">
-                    <img src="assets/hazard.jpg" alt="Etiqueta de seguridad">
-                </div>
-            </div>
-            <div class="image-column">
-                <img src="assets/hero-main.jpg" alt="Frascos de laboratorio">
-            </div>
-        </div>
+      <div class="hero-text">
+        <h1>Tu Aliado en busca de mejores alternativas de la Industria Química</h1>
+        <p>Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
+        <button>Nuestros Servicios</button>
+      </div>
+      <div class="hero-img">
+        <img src="assets/lab-glassware.jpg" alt="Vidriería de laboratorio" />
+      </div>
     </section>
 
-<section class="section-red">
-    <div class="container">
-        <h2>Contamos con una red internacional de aliados que nos permite identificar proveedores confiables en Asia, Europa y América para productos técnicos, equipo especializado y materias primas básicas.</h2>
-        <div class="image-grid">
-            <img src="assets/red1.jpg" alt="Proveedor confiable">
-            <img src="assets/red2.jpg" alt="Laboratorio técnico">
-            <img src="assets/red3.jpg" alt="Investigador en laboratorio">
-            <img src="assets/red4.jpg" alt="Símbolos de seguridad">
-            <img src="assets/red5.jpg" alt="Maquinaria especializada">
-            <img src="assets/red6.jpg" alt="Logística de productos">
-        </div>
-    </div>
-</section>
-
+    <section class="image-grid">
+      <img src="assets/modern-lab.jpg" alt="Laboratorio moderno" />
+      <img src="assets/chemical-label.jpg" alt="Etiqueta química" />
+    </section>
+  </div>
 </body>
 </html>
