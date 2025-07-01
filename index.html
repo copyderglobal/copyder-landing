@@ -29,7 +29,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      align-items: center;
+      align-items: start;
       margin-bottom: 3rem;
     }
 
@@ -61,20 +61,20 @@
       cursor: pointer;
     }
 
-    .hero-img img {
+    .inline-images {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .inline-images img {
       width: 100%;
+      max-width: 48%;
       border-radius: 10px;
       object-fit: cover;
     }
 
-    .image-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .image-grid img {
+    .hero-img img {
       width: 100%;
       border-radius: 10px;
       object-fit: cover;
@@ -85,8 +85,12 @@
         grid-template-columns: 1fr;
       }
 
-      .image-grid {
-        grid-template-columns: 1fr;
+      .inline-images {
+        flex-direction: column;
+      }
+
+      .inline-images img {
+        max-width: 100%;
       }
     }
   </style>
@@ -95,18 +99,18 @@
   <div class="container">
     <section class="hero">
       <div class="hero-text">
-        <h1>Tu Aliado en busca de mejores alternativas de la Industria Química</h1>
+        <h1>Tu aliado en busca de mejores alternativas de la Industria Química</h1>
         <p>Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
         <button>Nuestros Servicios</button>
+
+        <div class="inline-images">
+          <img src="assets/modern-lab.jpg" alt="Laboratorio moderno" />
+          <img src="assets/chemical-label.jpg" alt="Etiqueta química" />
+        </div>
       </div>
       <div class="hero-img">
-        <img src="assets/lab-glassware.png" alt="Vidriería de laboratorio" />
+        <img src="assets/lab-glassware.jpg" alt="Vidriería de laboratorio" />
       </div>
-    </section>
-
-    <section class="image-grid">
-      <img src="assets/modern-lab.png" alt="Laboratorio moderno" />
-      <img src="assets/chemical-label.png" alt="Etiqueta química" />
     </section>
   </div>
 </body>
