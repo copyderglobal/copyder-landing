@@ -78,7 +78,32 @@
       width: 100%;
       border-radius: 10px;
       object-fit: cover;
-      max-height: 700px;
+      max-height: 500px;
+    }
+
+    .trusted-network {
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .trusted-network h2 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      max-width: 900px;
+      margin: 0 auto 2rem auto;
+      line-height: 1.5;
+    }
+
+    .grid-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid-images img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
     }
 
     @media (max-width: 768px) {
@@ -117,7 +142,21 @@
         <img src="assets/lab-glassware.png" alt="Vidriería de laboratorio" />
       </div>
     </section>
+
+    <section class="trusted-network">
+      <h2>Contamos con una red internacional de aliados que nos permite identificar proveedores confiables en Asia, Europa y América para productos técnicos, equipo especializado y materias primas básicas.</h2>
+
+      <div class="grid-images">
+        <img src="assets/danger-hand.png" alt="Mano con frasco de advertencia" />
+        <img src="assets/lab-team.png" alt="Equipo trabajando en laboratorio" />
+        <img src="assets/scientist-examining.png" alt="Científico examinando muestra" />
+        <img src="assets/hazard-labels.png" alt="Señales de advertencia química" />
+        <img src="assets/process-engineer.png" alt="Ingeniero en planta" />
+        <img src="assets/forklift-sacks.png" alt="Montacargas con sacos" />
+      </div>
+    </section>
   </div>
 </body>
 </html>
+
 
