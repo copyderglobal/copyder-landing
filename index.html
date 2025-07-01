@@ -45,7 +45,7 @@
     .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 0 2rem;
     }
 
     .hero {
@@ -53,7 +53,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       align-items: start;
-      margin-bottom: 2rem;
+      padding: 2rem 0;
     }
 
     .hero-text {
@@ -112,7 +112,7 @@
       font-size: 1.4rem;
       font-weight: 900;
       max-width: 900px;
-      margin: 0 auto 1.5rem auto;
+      margin: 0;
       line-height: 1.5;
       text-align: left;
     }
@@ -121,6 +121,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
+      margin-top: 1rem;
     }
 
     .grid-images img {
@@ -130,7 +131,7 @@
     }
 
     .import-section {
-      margin-top: 2rem;
+      padding: 2rem 0;
     }
 
     .import-grid {
@@ -258,20 +259,17 @@
   </style>
 </head>
 <body>
-
   <header class="main-header">
     <div class="header-container">
       <div class="logo">Copyder de México</div>
     </div>
   </header>
-
   <div class="container">
     <section class="hero">
       <div class="hero-text">
         <h1>Tu Aliado en busca de mejores alternativas de la Industria Química</h1>
         <p>Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
         <button>Nuestros Servicios</button>
-
         <div class="inline-images">
           <img src="assets/modern-lab.png" alt="Laboratorio moderno" />
           <img src="assets/chemical-label.png" alt="Etiqueta química" />
@@ -283,7 +281,7 @@
     </section>
 
     <section class="trusted-network">
-      <h2>Contamos con una red internacional de aliados que nos permite identificar proveedores confiables en Asia, Europa y América para productos técnicos, equipo especializado y materias primas básicas.</h2>
+      <h2 class="container">Contamos con una red internacional de aliados que nos permite identificar proveedores confiables en Asia, Europa y América para productos técnicos, equipo especializado y materias primas básicas.</h2>
       <div class="grid-images">
         <img src="assets/hazard-labels.png" alt="Señales de advertencia química" />
         <img src="assets/process-engineer.png" alt="Ingeniero en planta" />
@@ -301,13 +299,11 @@
           <p>Nuestros clientes suelen enfrentar obstáculos en el abastecimiento de materiales no comunes o en plazos cortos; Copyder de México actúa como puente para resolverlos rápidamente.</p>
         </div>
       </div>
-
       <div class="process-intro">
         <small>Evaluamos los mejores proveedores a nivel mundial</small>
         <h2>Transforma tus procesos con la mejor materia prima a nivel mundial</h2>
         <p>Elimina terceras empresas al contactar directamente a los fabricantes de distintas industrias</p>
       </div>
-
       <div class="cards-grid">
         <div class="card" style="background-image: url('assets/energeticos.png');">
           <h3>Energéticos</h3>
