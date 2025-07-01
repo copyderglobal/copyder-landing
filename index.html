@@ -94,24 +94,11 @@
       line-height: 1.5;
     }
 
-   .grid-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-@media (max-width: 900px) {
-  .grid-images {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .grid-images {
-    grid-template-columns: 1fr;
-  }
-}
-
+    .grid-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
 
     .grid-images img {
       width: 100%;
@@ -119,7 +106,13 @@
       object-fit: cover;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
+      .grid-images {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
       .hero {
         grid-template-columns: 1fr;
       }
@@ -135,6 +128,10 @@
       .hero-img img {
         max-height: none;
       }
+
+      .grid-images {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -142,7 +139,7 @@
   <div class="container">
     <section class="hero">
       <div class="hero-text">
-        <h1>Tu aliado en busca de mejores alternativas de la Industria Química</h1>
+        <h1>Tu Aliado en busca de mejores alternativas de la Industria Química</h1>
         <p>Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
         <button>Nuestros Servicios</button>
 
@@ -171,5 +168,3 @@
   </div>
 </body>
 </html>
-
-
