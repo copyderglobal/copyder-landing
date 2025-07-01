@@ -3,23 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Copyder de México</title>
+  <title>Comercializadora Química</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
+      background-color: #f8f8f8;
       color: #111;
     }
 
     .main-header {
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -40,16 +42,10 @@
       color: #111;
     }
 
-    section {
-      padding: 4rem 2rem;
-    }
-
-    .gray-bg { background-color: #f2f2f2; }
-    .white-bg { background-color: #ffffff; }
-
     .container {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 2rem;
     }
 
     .hero {
@@ -57,6 +53,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       align-items: start;
+      margin-bottom: 3rem;
     }
 
     .hero-text {
@@ -107,29 +104,44 @@
       max-height: 500px;
     }
 
-    .import-grid, .trusted-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      align-items: center;
+    .trusted-network {
+      padding: 3rem 0;
     }
 
-    .trusted-grid h2 {
+    .trusted-network h2 {
       font-size: 1.4rem;
       font-weight: 900;
-      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto 2rem auto;
+      line-height: 1.5;
       text-align: left;
-      margin: 0;
     }
 
     .grid-images {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
-      margin-top: 2rem;
     }
 
     .grid-images img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .import-section {
+      margin-top: 4rem;
+    }
+
+    .import-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .import-image img {
       width: 100%;
       border-radius: 10px;
       object-fit: cover;
@@ -144,6 +156,11 @@
     .import-text p {
       font-size: 1rem;
       line-height: 1.6;
+    }
+
+    .process-intro {
+      text-align: left;
+      margin-bottom: 2rem;
     }
 
     .process-intro small {
@@ -191,19 +208,25 @@
       font-size: 0.9rem;
     }
 
-    @media (max-width: 1000px) {
-      .cards-grid, .grid-images {
+    @media (max-width: 900px) {
+      .grid-images {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .hero,
-      .import-grid,
-      .trusted-grid {
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .import-grid {
         grid-template-columns: 1fr;
       }
     }
 
     @media (max-width: 600px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
       .inline-images {
         flex-direction: column;
       }
@@ -216,13 +239,20 @@
         max-height: none;
       }
 
-      .cards-grid, .grid-images {
+      .grid-images,
+      .cards-grid {
         grid-template-columns: 1fr;
       }
 
       .card {
         height: auto;
         padding: 1.5rem;
+      }
+
+      .trusted-network h2 {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   </style>
@@ -235,8 +265,8 @@
     </div>
   </header>
 
-  <section class="white-bg">
-    <div class="container hero">
+  <div class="container">
+    <section class="hero">
       <div class="hero-text">
         <h1>Tu Aliado en busca de mejores alternativas de la Industria Química</h1>
         <p>Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
@@ -250,46 +280,35 @@
       <div class="hero-img">
         <img src="assets/lab-glassware.png" alt="Vidriería de laboratorio" />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="gray-bg">
-    <div class="container trusted-network">
-      <div class="trusted-grid">
-        <div class="trusted-image">
-          <img src="assets/hazard-labels.png" alt="Advertencia química" style="width:100%; border-radius:10px;" />
-        </div>
-        <div>
-          <h2>Contamos con una red internacional de aliados que nos permite identificar proveedores confiables en Asia, Europa y América para productos técnicos, equipo especializado y materias primas básicas.</h2>
-        </div>
-      </div>
+    <section class="trusted-network">
+      <h2>Contamos con una red internacional de aliados que nos permite identificar proveedores confiables en Asia, Europa y América para productos técnicos, equipo especializado y materias primas básicas.</h2>
+
       <div class="grid-images">
         <img src="assets/hazard-labels.png" alt="Señales de advertencia química" />
         <img src="assets/process-engineer.png" alt="Ingeniero en planta" />
         <img src="assets/forklift-sacks.png" alt="Montacargas con sacos" />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="white-bg">
-    <div class="container import-grid">
-      <div class="import-image">
-        <img src="assets/blue-barrels.png" alt="Barriles azules" />
+    <section class="import-section">
+      <div class="import-grid">
+        <div class="import-image">
+          <img src="assets/blue-barrels.png" alt="Barriles azules en almacén" />
+        </div>
+        <div class="import-text">
+          <h2>Importaciones hacia México de tus principales materias primas, equipos y consumibles</h2>
+          <p>Nuestros clientes suelen enfrentar obstáculos en el abastecimiento de materiales no comunes o en plazos cortos; Copyder de México actúa como puente para resolverlos rápidamente.</p>
+        </div>
       </div>
-      <div class="import-text">
-        <h2>Importaciones hacia México de tus principales materias primas, equipos y consumibles</h2>
-        <p>Nuestros clientes suelen enfrentar obstáculos en el abastecimiento de materiales no comunes o en plazos cortos; Copyder de México actúa como puente para resolverlos rápidamente.</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="gray-bg">
-    <div class="container">
       <div class="process-intro">
         <small>Evaluamos los mejores proveedores a nivel mundial</small>
         <h2>Transforma tus procesos con la mejor materia prima a nivel mundial</h2>
         <p>Elimina terceras empresas al contactar directamente a los fabricantes de distintas industrias</p>
       </div>
+
       <div class="cards-grid">
         <div class="card" style="background-image: url('assets/energeticos.png');">
           <h3>Energéticos</h3>
@@ -308,8 +327,7 @@
           <p>Químicos básicos y aditivos para la industria metalmecánica, textil, papelera y minera</p>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
 </body>
 </html>
