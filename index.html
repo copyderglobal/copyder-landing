@@ -129,9 +129,96 @@
       object-fit: cover;
     }
 
+    .import-section {
+      margin-top: 4rem;
+    }
+
+    .import-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .import-image img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .import-text h2 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    .import-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .process-intro {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .process-intro small {
+      font-weight: 600;
+      color: #444;
+    }
+
+    .process-intro h2 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin: 0.5rem 0;
+    }
+
+    .process-intro p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 2rem 1.5rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 260px;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+    }
+
     @media (max-width: 900px) {
       .grid-images {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .import-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -152,8 +239,14 @@
         max-height: none;
       }
 
-      .grid-images {
+      .grid-images,
+      .cards-grid {
         grid-template-columns: 1fr;
+      }
+
+      .card {
+        height: auto;
+        padding: 1.5rem;
       }
 
       .trusted-network h2 {
@@ -175,7 +268,7 @@
   <div class="container">
     <section class="hero">
       <div class="hero-text">
-        <h1>Tu aliado en busca de mejores alternativas de la Industria Química</h1>
+        <h1>Tu Aliado en busca de mejores alternativas de la Industria Química</h1>
         <p>Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
         <button>Nuestros Servicios</button>
 
@@ -196,6 +289,43 @@
         <img src="assets/hazard-labels.png" alt="Señales de advertencia química" />
         <img src="assets/process-engineer.png" alt="Ingeniero en planta" />
         <img src="assets/forklift-sacks.png" alt="Montacargas con sacos" />
+      </div>
+    </section>
+
+    <section class="import-section">
+      <div class="import-grid">
+        <div class="import-image">
+          <img src="assets/blue-barrels.png" alt="Barriles azules en almacén" />
+        </div>
+        <div class="import-text">
+          <h2>Importaciones hacia México de tus principales materias primas, equipos y consumibles</h2>
+          <p>Nuestros clientes suelen enfrentar obstáculos en el abastecimiento de materiales no comunes o en plazos cortos; Copyder de México actúa como puente para resolverlos rápidamente.</p>
+        </div>
+      </div>
+
+      <div class="process-intro">
+        <small>Evaluamos los mejores proveedores a nivel mundial</small>
+        <h2>Transforma tus procesos con la mejor materia prima a nivel mundial</h2>
+        <p>Elimina terceras empresas al contactar directamente a los fabricantes de distintas industrias</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card" style="background-image: url('assets/energeticos.png');">
+          <h3>Energéticos</h3>
+          <p>Combustibles, aditivos, fluidos térmicos</p>
+        </div>
+        <div class="card" style="background-image: url('assets/lubricantes.png');">
+          <h3>Lubricantes</h3>
+          <p>Grasas especiales, aceites minerales, fluidos sintéticos</p>
+        </div>
+        <div class="card" style="background-image: url('assets/tratamiento-agua.png');">
+          <h3>Tratamiento de Agua</h3>
+          <p>Polímeros aniónicos, catiónicos, no iónicos.</p>
+        </div>
+        <div class="card" style="background-image: url('assets/aditivos.png');">
+          <h3>Aditivos para procesos químicos</h3>
+          <p>Químicos básicos y aditivos para la industria metalmecánica, textil, papelera y minera</p>
+        </div>
       </div>
     </section>
   </div>
