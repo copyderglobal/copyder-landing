@@ -203,12 +203,29 @@
       margin-bottom: 1rem;
     }
 
+    .strategic-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .strategic-images img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
     @media (max-width: 900px) {
       .cards-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
       .import-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .strategic-images {
         grid-template-columns: 1fr;
       }
     }
@@ -307,6 +324,11 @@
       <h2>Red Internacional de Abastecimiento Estratégico</h2>
       <p><strong>Contamos con una red internacional de aliados estratégicos que nos permite identificar proveedores confiables en Asia, Europa y América.</strong></p>
       <p>Ofrecemos soluciones especializadas para la adquisición de materias primas, equipos técnicos y productos químicos que no siempre están disponibles en el mercado local, ayudando a nuestros clientes a asegurar continuidad operativa y mejorar sus procesos.</p>
+      <div class="strategic-images">
+        <img src="assets/hazard-label.png" alt="Etiquetas de materiales peligrosos" />
+        <img src="assets/lab-worker.png" alt="Técnico en laboratorio" />
+        <img src="assets/forklift-warehouse.png" alt="Montacargas con sacos en almacén" />
+      </div>
     </section>
   </div>
 </body>
