@@ -45,21 +45,24 @@
     .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 2rem;
     }
 
     .hero {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      align-items: start;
-      padding: 2rem 0;
+      align-items: stretch;
+      margin-bottom: 2rem;
     }
 
     .hero-text {
       background-color: #e8e8e8;
       padding: 2rem;
       border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .hero-text h1 {
@@ -82,12 +85,13 @@
       border-radius: 6px;
       font-weight: 600;
       cursor: pointer;
+      margin-bottom: 1.5rem;
     }
 
     .inline-images {
       display: flex;
       gap: 1rem;
-      margin-top: 1.5rem;
+      margin-top: auto;
     }
 
     .inline-images img {
@@ -99,9 +103,9 @@
 
     .hero-img img {
       width: 100%;
+      height: 100%;
       border-radius: 10px;
       object-fit: cover;
-      max-height: 500px;
     }
 
     .trusted-network {
@@ -112,7 +116,7 @@
       font-size: 1.4rem;
       font-weight: 900;
       max-width: 900px;
-      margin: 0;
+      margin: 0 auto 1.5rem auto;
       line-height: 1.5;
       text-align: left;
     }
@@ -121,7 +125,6 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
-      margin-top: 1rem;
     }
 
     .grid-images img {
@@ -131,7 +134,7 @@
     }
 
     .import-section {
-      padding: 2rem 0;
+      margin-top: 2rem;
     }
 
     .import-grid {
@@ -237,7 +240,7 @@
       }
 
       .hero-img img {
-        max-height: none;
+        height: auto;
       }
 
       .grid-images,
@@ -259,19 +262,22 @@
   </style>
 </head>
 <body>
+
   <header class="main-header">
     <div class="header-container">
       <div class="logo">Copyder de México</div>
     </div>
   </header>
+
   <div class="container">
     <section class="hero">
       <div class="hero-text">
         <h1>Tu Aliado en busca de mejores alternativas de la Industria Química</h1>
         <p>Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
         <button>Nuestros Servicios</button>
+
         <div class="inline-images">
-          <img src="assets/meeting.png" alt="Laboratorio moderno" />
+          <img src="assets/modern-lab.png" alt="Laboratorio moderno" />
           <img src="assets/chemical-label.png" alt="Etiqueta química" />
         </div>
       </div>
@@ -281,7 +287,7 @@
     </section>
 
     <section class="trusted-network">
-      <h2 class="container">Contamos con una red internacional de aliados que nos permite identificar proveedores confiables en Asia, Europa y América para productos técnicos, equipo especializado y materias primas básicas.</h2>
+      <h2>Contamos con una red internacional de aliados que nos permite identificar proveedores confiables en Asia, Europa y América para productos técnicos, equipo especializado y materias primas básicas.</h2>
       <div class="grid-images">
         <img src="assets/hazard-labels.png" alt="Señales de advertencia química" />
         <img src="assets/process-engineer.png" alt="Ingeniero en planta" />
@@ -299,11 +305,13 @@
           <p>Nuestros clientes suelen enfrentar obstáculos en el abastecimiento de materiales no comunes o en plazos cortos; Copyder de México actúa como puente para resolverlos rápidamente.</p>
         </div>
       </div>
+
       <div class="process-intro">
         <small>Evaluamos los mejores proveedores a nivel mundial</small>
         <h2>Transforma tus procesos con la mejor materia prima a nivel mundial</h2>
         <p>Elimina terceras empresas al contactar directamente a los fabricantes de distintas industrias</p>
       </div>
+
       <div class="cards-grid">
         <div class="card" style="background-image: url('assets/energeticos.png');">
           <h3>Energéticos</h3>
