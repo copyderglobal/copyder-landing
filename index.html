@@ -11,6 +11,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -77,14 +81,14 @@
       margin-bottom: 1.5rem;
     }
 
-    .hero-text button {
+    .scroll-button {
+      display: inline-block;
       background-color: #000;
       color: #fff;
-      border: none;
+      text-decoration: none;
       padding: 0.75rem 1.5rem;
       border-radius: 6px;
       font-weight: 600;
-      cursor: pointer;
       margin-bottom: 1.5rem;
     }
 
@@ -299,9 +303,71 @@
   </header>
 
   <div class="container">
-    <!-- existing sections remain unchanged -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Tu aliado en busca de mejores alternativas de la Industria Química</h1>
+        <p>Contamos con una red internacional de aliados estratégicos que nos permite identificar proveedores confiables en Asia, Europa y América. Nuestro equipo técnico está conformado por profesionales con experiencia en compras globales, análisis de mercado y soluciones personalizadas.</p>
+        <p>Nos especializamos en encontrar soluciones de abastecimiento y representación para clientes que requieren atención profesional y un enfoque personalizado en el manejo de sus cadenas de suministro estratégicas.</p>
+        <a href="#servicios" class="scroll-button">Nuestros Servicios</a>
+        <div class="inline-images">
+          <img src="assets/meeting.png" alt="Laboratorio moderno" />
+          <img src="assets/chemical-label.png" alt="Etiqueta química" />
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="assets/lab-glassware.png" alt="Vidriería de laboratorio" />
+      </div>
+    </section>
 
-    <section class="services-section">
+    <section class="import-section">
+      <div class="import-grid">
+        <div class="import-image">
+          <img src="assets/blue-barrels.png" alt="Barriles azules en almacén" />
+        </div>
+        <div class="import-text">
+          <h2>Importaciones hacia México de tus principales materias primas, equipos y consumibles</h2>
+          <p>Nuestros clientes suelen enfrentar obstáculos en el abastecimiento de materiales no comunes o en plazos cortos; Copyder de México actúa como puente para resolverlos rápidamente.</p>
+        </div>
+      </div>
+
+      <div class="process-intro">
+        <small>Evaluamos los mejores proveedores a nivel mundial</small>
+        <h2>Transforma tus procesos con la mejor materia prima a nivel mundial</h2>
+        <p>Elimina terceras empresas al contactar directamente a los fabricantes de distintas industrias</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card" style="background-image: url('assets/energeticos.png');">
+          <h3>Energéticos</h3>
+          <p>Combustibles, aditivos, fluidos térmicos</p>
+        </div>
+        <div class="card" style="background-image: url('assets/lubricantes.png');">
+          <h3>Lubricantes</h3>
+          <p>Grasas especiales, aceites minerales, fluidos sintéticos</p>
+        </div>
+        <div class="card" style="background-image: url('assets/tratamiento-agua.png');">
+          <h3>Tratamiento de Agua</h3>
+          <p>Polímeros aniónicos, catiónicos, no iónicos.</p>
+        </div>
+        <div class="card" style="background-image: url('assets/aditivos.png');">
+          <h3>Aditivos para procesos químicos</h3>
+          <p>Químicos básicos y aditivos para la industria metalmecánica, textil, papelera y minera</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="strategic-sourcing">
+      <h2>Red Internacional de Abastecimiento Estratégico</h2>
+      <p><strong>Contamos con una red internacional de aliados estratégicos que nos permite identificar proveedores confiables en Asia, Europa y América.</strong></p>
+      <p>Ofrecemos soluciones especializadas para la adquisición de materias primas, equipos técnicos y productos químicos que no siempre están disponibles en el mercado local, ayudando a nuestros clientes a asegurar continuidad operativa y mejorar sus procesos.</p>
+      <div class="strategic-images">
+        <img src="assets/hazard-labels.png" alt="Etiquetas de materiales peligrosos" />
+        <img src="assets/lab-team.png" alt="Técnico en laboratorio" />
+        <img src="assets/forklift-sacks.png" alt="Montacargas con sacos en almacén" />
+      </div>
+    </section>
+
+    <section class="services-section" id="servicios">
       <h2>Servicios Estratégicos</h2>
       <p>Nuestra propuesta de valor está orientada a departamentos de ingeniería, calidad y compras que buscan aliados estratégicos, no solo proveedores de volumen. Incorporamos criterios de evaluación ambiental y ciclo de vida cuando el proyecto requiere sustentabilidad certificada o estándares internacionales.</p>
       <p>Ayudamos a reducir los riesgos de dependencia de un solo proveedor al construir esquemas de suministro redundante con respaldo técnico validado. Implementamos trazabilidad documental y análisis de riesgos logísticos para entregas sensibles por tiempo, temperatura o condiciones especiales.</p>
@@ -315,7 +381,6 @@
         <li>Traducción técnica y contacto multilingüe con fabricantes</li>
       </ul>
     </section>
-
   </div>
 </body>
 </html>
